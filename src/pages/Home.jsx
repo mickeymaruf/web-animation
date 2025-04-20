@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import router from "../routes/router";
 
 function Home() {
   return (
@@ -8,38 +9,13 @@ function Home() {
         View My All Web Animations
       </h1>
       <ul className="list-disc">
-        <li>
-          <Link
-            to="/parallax-section-transition"
-            className="text-blue-700 underline"
-          >
-            ParallaxSectionTransition
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/parallax-section-transition"
-            className="text-blue-700 underline"
-          >
-            ParallaxSectionTransition
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/parallax-section-transition"
-            className="text-blue-700 underline"
-          >
-            ParallaxSectionTransition
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/parallax-section-transition"
-            className="text-blue-700 underline"
-          >
-            ParallaxSectionTransition
-          </Link>
-        </li>
+        {router.routes.slice(1).map((r) => (
+          <li key={r.id}>
+            <Link to={r.path} className="text-blue-700 underline">
+              {r.path.slice(1)}
+            </Link>
+          </li>
+        ))}
       </ul>
     </div>
   );
