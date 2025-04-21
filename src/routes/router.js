@@ -6,6 +6,7 @@ import SlidingStairsMenu from "../pages/projects/SlidingStairsMenu";
 import AwwwardsProjectGallery from "../pages/projects/AwwwardsProjectGallery";
 import NavMenuSlideSwitch from "../pages/projects/nav-menu-slide-switch";
 import StripeFancyHoverAnimation from "../pages/projects/stripe-fancy-hover-animation";
+import ToDoExitAnimation from "../pages/projects/to-do-exit-animation";
 
 let router = createBrowserRouter([
   {
@@ -33,9 +34,13 @@ let router = createBrowserRouter([
     Component: StripeFancyHoverAnimation,
   },
   {
-    path: "/playground",
-    Component: Playground,
+    path: "/to-do-exit-animation",
+    Component: ToDoExitAnimation,
   },
+  // {
+  //   path: "/playground",
+  //   Component: Playground,
+  // },
 ]);
 
 export default router;

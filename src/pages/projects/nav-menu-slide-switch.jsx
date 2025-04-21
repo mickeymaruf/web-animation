@@ -18,7 +18,7 @@ function NavMenuSlideSwitch() {
     <nav className="grid place-items-center h-screen bg-gray-100">
       <ul
         onMouseLeave={() => setState({ opacity: 0 })}
-        className="border-2 border-black rounded-full flex items-center w-fit bg-white p-1"
+        className="border-2 border-black rounded-full flex items-center w-fit bg-white p-1 relative"
       >
         {["Home", "Pricing", "Features", "Docs", "Blogs"].map((tab, index) => (
           <Tab key={index} tab={tab} setState={setState} />

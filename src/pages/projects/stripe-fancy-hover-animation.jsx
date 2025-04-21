@@ -11,8 +11,8 @@ import {
   BsTiktok,
 } from "react-icons/bs";
 import { useAnimate } from "framer-motion";
-import { GiConsoleController } from "react-icons/gi";
 
+// TUTORIAL: https://youtu.be/Q32_JlcPP-c?si=9-6Z74LBnbe7SqeP
 function StripeFancyHoverAnimation() {
   return (
     <section className="bg-gray-100 min-h-screen p-20">
