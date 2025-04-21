@@ -5,6 +5,7 @@ import Playground from "../pages/Playground";
 import SlidingStairsMenu from "../pages/projects/SlidingStairsMenu";
 import AwwwardsProjectGallery from "../pages/projects/AwwwardsProjectGallery";
 import NavMenuSlideSwitch from "../pages/projects/nav-menu-slide-switch";
+import StripeFancyHoverAnimation from "../pages/projects/stripe-fancy-hover-animation";
 
 let router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ let router = createBrowserRouter([
   {
     path: "/nav-menu-slide-switch",
     Component: NavMenuSlideSwitch,
+  },
+  {
+    path: "/stripe-fancy-hover-animation",
+    Component: StripeFancyHoverAnimation,
   },
   {
     path: "/playground",
